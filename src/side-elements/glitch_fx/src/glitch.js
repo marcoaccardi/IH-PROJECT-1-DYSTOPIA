@@ -25,10 +25,6 @@ const sideCanvas = sketch => {
     if (isLoaded) {
       glitch.show();
     }
-
-    // fill(255, 255, 255);
-    // textSize(14);
-    // text("FPS: " + floor(frameRate()), 20, 30);
   };
 
   ///////////////////////////////////////////////////

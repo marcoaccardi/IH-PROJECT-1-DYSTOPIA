@@ -23,11 +23,6 @@ const posNetCanvas = sketch => {
     video = sketch.createCapture(sketch.VIDEO);
     video.size(sketch.width, sketch.height);
 
-    //NEW DESIGN
-    // stroke(255);
-    // noFill();
-    //
-
     // Create a new poseNet method with a single detection
     poseNet = ml5.poseNet(video, modelReady);
     // This sets up an event that fills the global variable "poses"
@@ -104,8 +99,6 @@ const posNetCanvas = sketch => {
           }, 500);
         }
       }
-
-      // console.log(trigger);
       // console.log(leftX);
 
       //-----------------------------------------------------------//
@@ -156,38 +149,3 @@ const posNetCanvas = sketch => {
     }
   };
 };
-
-// function modelReady() {
-//   // select("#status").html("Model Loaded");
-// }
-
-// A function to draw ellipses over the detected keypoints
-// function drawKeypoints() {
-//   // Loop through all the poses detected
-//   for (let i = 0; i < poses.length; i++) {
-//     // For each pose detected, loop through all the keypoints
-//     for (let j = 0; j < poses[i].pose.keypoints.length; j++) {
-//       // A keypoint is an object describing a body part (like rightArm or leftShoulder)
-//       let keypoint = poses[i].pose.keypoints[j];
-//       // Only draw an ellipse is the pose probability is bigger than 0.2
-//       if (keypoint.score > 0.2) {
-//         // fill(255, 0, 0);
-//         // noStroke();
-//         // ellipse(keypoint.position.x, keypoint.position.y, 10, 10);
-
-//         //LEFT WRIST >>> GREEN
-//         if (keypoint == poses[0].pose.keypoints[9]) {
-//           fill(0, 255, 0);
-//           noStroke();
-//           ellipse(keypoint.position.x, keypoint.position.y, 15, 10);
-//         }
-//         //RIGHT WRIST >>> RED
-//         if (keypoint == poses[0].pose.keypoints[10]) {
-//           fill(255, 0, 0);
-//           noStroke();
-//           ellipse(keypoint.position.x, keypoint.position.y, 15, 10);
-//         }
-//       }
-//     }
-//   }
-// }
