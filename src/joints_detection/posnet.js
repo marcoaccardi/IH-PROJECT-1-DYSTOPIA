@@ -60,10 +60,10 @@ const posNetCanvas = sketch => {
       //AREA 1
       if (triggerAreaOne !== 1) {
         if (leftX > 260 && leftX < 660 && (leftY > 150 && leftY < 350)) {
-          console.log("triggerAreaOne 1");
+          // console.log("triggerAreaOne 1");
           triggerAreaOne = 1;
           setTimeout(() => {
-            console.log("triggerAreaOne 0");
+            // console.log("triggerAreaOne 0");
             triggerAreaOne = 0;
           }, 500);
         }
@@ -72,10 +72,10 @@ const posNetCanvas = sketch => {
       //AREA 2
       if (triggerAreaTwo !== 1) {
         if (leftX > 1700 && leftX < 2300 && (leftY > 150 && leftY < 350)) {
-          console.log("triggerAreaTwo 1");
+          // console.log("triggerAreaTwo 1");
           triggerAreaTwo = 1;
           setTimeout(() => {
-            console.log("triggerAreaTwo 0");
+            // console.log("triggerAreaTwo 0");
             triggerAreaTwo = 0;
           }, 500);
         }
@@ -84,10 +84,10 @@ const posNetCanvas = sketch => {
       //AREA 3
       if (triggerAreaThree !== 1) {
         if (leftX > 260 && leftX < 660 && (leftY > 800 && leftY < 1200)) {
-          console.log("triggerAreaThree 1");
+          // console.log("triggerAreaThree 1");
           triggerAreaThree = 1;
           setTimeout(() => {
-            console.log("triggerAreaThree 0");
+            // console.log("triggerAreaThree 0");
             triggerAreaThree = 0;
           }, 500);
         }
@@ -96,10 +96,10 @@ const posNetCanvas = sketch => {
       //AREA 4
       if (triggerAreaFour !== 1) {
         if (leftX > 1700 && leftX < 2300 && (leftY > 800 && leftY < 1200)) {
-          console.log("triggerAreaFour 1");
+          // console.log("triggerAreaFour 1");
           triggerAreaFour = 1;
           setTimeout(() => {
-            console.log("triggerAreaFour 0");
+            // console.log("triggerAreaFour 0");
             triggerAreaFour = 0;
           }, 500);
         }

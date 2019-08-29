@@ -40,7 +40,7 @@ function PlayerZeroPlay() {
     fileZero.loop();
     
     
-    console.log("playingZero");
+    // console.log("playingZero");
     // } else if (trigger === 0) {
     //   if (audioFile && audioFile.isPlaying()) audioFile.stop();
     //   console.log("stoppingOne");
@@ -53,7 +53,7 @@ function PlayerOnePlay() {
   // console.log(audioFile);
   if (fileOne && !fileOne.isPlaying()) {
     fileOne.loop();
-    console.log("playingOne");
+    // console.log("playingOne");
     // } else if (trigger === 0) {
     //   if (audioFile && audioFile.isPlaying()) audioFile.stop();
     //   console.log("stoppingOne");
@@ -78,12 +78,12 @@ function PlayerTwoPlay() {
     audioFile.setVolume(0.9);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
-    console.log("playingTwo");
+    // console.log("playingTwo");
   } else if (triggerAreaOne === 0) {
-    console.log(audioFile.isPlaying());
+    // console.log(audioFile.isPlaying());
     if (audioFile && audioFile.isPlaying()) {
       audioFile.stop();
-      console.log("stoppingTwo");
+      // console.log("stoppingTwo");
     }
   }
 }
@@ -106,10 +106,10 @@ function PlayerThreePlay() {
     audioFile.setVolume(0.9);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
-    console.log("playingThree");
+    // console.log("playingThree");
   } else if (triggerAreaTwo === 0) {
     if (audioFile && audioFile.isPlaying()) audioFile.stop();
-    console.log("stoppingThree");
+    // console.log("stoppingThree");
   }
 }
 
@@ -131,10 +131,10 @@ function PlayerFourPlay() {
     audioFile.setVolume(0.9);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
-    console.log("playingFour");
+    // console.log("playingFour");
   } else if (triggerAreaThree === 0) {
     if (audioFile && audioFile.isPlaying()) audioFile.stop();
-    console.log("stoppingFour");
+    // console.log("stoppingFour");
   }
 }
 
@@ -156,10 +156,10 @@ function PlayerFivePlay() {
     audioFile.setVolume(0.9);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
-    console.log("playingFive");
+    // console.log("playingFive");
   } else if (triggerAreaFour === 0) {
     if (audioFile && audioFile.isPlaying()) audioFile.stop();
-    console.log("stoppingFive");
+    // console.log("stoppingFive");
   }
 }
 
