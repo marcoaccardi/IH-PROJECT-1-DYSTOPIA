@@ -14,10 +14,10 @@ function preload(sketch) {
   fileFive = sketch.loadSound(prefix + "assets/sndArea4.mp3");
 }
 
-
 // RHYTHM LOOP
 function PlayerZeroPlay() {
   if (fileZero && !fileZero.isPlaying()) {
+    audioFile.setVolume(1.3);
     fileZero.loop();
   }
 }
@@ -36,7 +36,7 @@ function PlayerTwoPlay() {
   analyzer.setInput(audioFile);
 
   if (audioFile && !audioFile.isPlaying()) {
-    audioFile.setVolume(0.9);
+    audioFile.setVolume(0.8);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
   } else if (triggerAreaOne === 0) {
@@ -59,7 +59,7 @@ function PlayerThreePlay() {
   // Patch the input to an volume analyzer
   analyzer.setInput(audioFile);
   if (audioFile && !audioFile.isPlaying()) {
-    audioFile.setVolume(0.9);
+    audioFile.setVolume(0.8);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
   } else if (triggerAreaTwo === 0) {
@@ -81,7 +81,7 @@ function PlayerFourPlay() {
   analyzer.setInput(audioFile);
   // console.log(analyzer);
   if (audioFile && !audioFile.isPlaying()) {
-    audioFile.setVolume(0.9);
+    audioFile.setVolume(0.8);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
     // console.log("playingFour");
@@ -103,7 +103,7 @@ function PlayerFivePlay() {
   // Patch the input to an volume analyzer
   analyzer.setInput(audioFile);
   if (audioFile && !audioFile.isPlaying()) {
-    audioFile.setVolume(0.9);
+    audioFile.setVolume(0.7);
     audioFile.play();
     reverb.process(audioFile, 5, 2);
   } else if (triggerAreaFour === 0) {
